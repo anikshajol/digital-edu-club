@@ -669,8 +669,8 @@
 
       <!-- Students Feedback section start -->
 
-      <section class="students-feedback container mx-auto">
-        <div class="heading w-1/2 mx-auto space-y-5">
+      <section class="students-feedback p-5 container mx-auto">
+        <div class="heading lg:w-1/2 mx-auto space-y-5">
           <h2 class="text-5xl text-center text-dark01">Students Feedback</h2>
           <p class="text-dark-02 text-center">
             It is a long established fact that a reader will be distracted by
@@ -678,9 +678,13 @@
           </p>
         </div>
         <!-- card section start -->
-        <section class="card grid gap-x-8 grid-cols-2 mb-10">
+        <section
+          class="card grid lg:grid-cols-2 grid-cols-1 gap-x-8 lg:mb-10 mb-5"
+        >
           <!-- card-1 -->
-          <div class="card-1 border-2 border-dardk01 space-y-5 p-8 mt-12">
+          <div
+            class="relative card-1 border-2 border-dardk01 space-y-5 p-8 mt-12"
+          >
             <div class="icon flex justify-between">
               <div class="comma-icon">
                 <img src="./images/icon/comma.png" alt="comma icon" />
@@ -694,6 +698,13 @@
               </div>
             </div>
 
+            <div class="arrow-icon">
+              <img
+                src="./images/icon/Group 4885.png"
+                class="absolute hidden lg:block lg:-left-8 m-auto"
+                alt=""
+              />
+            </div>
             <p class="text-dark02">
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in some form, by
@@ -714,47 +725,326 @@
           </div>
 
           <!-- Card-2 -->
-          <div class="card-2">
-            <div class="card-1 border-2 border-dardk01 space-y-5 p-8 mt-12">
-              <div class="icon flex justify-between">
-                <div class="comma-icon">
-                  <img src="./images/icon/comma.png" alt="comma icon" />
-                </div>
-                <div class="star-icon">
-                  <i class="fa-solid fa-star text-star"></i>
-                  <i class="fa-solid fa-star text-star"></i>
-                  <i class="fa-solid fa-star text-star"></i>
-                  <i class="fa-solid fa-star text-star"></i>
-                  <i class="fa-solid fa-star-half-stroke text-star"></i>
-                </div>
+
+          <div
+            class="relative card-2 border-2 border-dardk01 space-y-5 p-8 mt-12"
+          >
+            <div class="icon flex justify-between">
+              <div class="comma-icon">
+                <img src="./images/icon/comma.png" alt="comma icon" />
+              </div>
+              <div class="star-icon">
+                <i class="fa-solid fa-star text-star"></i>
+                <i class="fa-solid fa-star text-star"></i>
+                <i class="fa-solid fa-star text-star"></i>
+                <i class="fa-solid fa-star text-star"></i>
+                <i class="fa-solid fa-star-half-stroke text-star"></i>
+              </div>
+            </div>
+            <div class="arrow-icon">
+              <img
+                src="./images/icon/Group 4884.png"
+                class="absolute hidden lg:block lg:-right-8 m-auto"
+                alt=""
+              />
+            </div>
+            <p class="text-dark02">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem.
+            </p>
+
+            <div class="identity flex items-center">
+              <div class="img pr-4">
+                <img src="./images/student/student-6.png" class="" alt="" />
               </div>
 
-              <p class="text-dark02">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable. If you are going to use a passage of Lorem.
-              </p>
-
-              <div class="identity flex items-center">
-                <div class="img pr-4">
-                  <img src="./images/student/student-6.png" class="" alt="" />
-                </div>
-
-                <div class="name">
-                  <h5>Awlad Hossain</h5>
-                  <p>UI Designer</p>
-                </div>
+              <div class="name">
+                <h5>Awlad Hossain</h5>
+                <p>UI Designer</p>
               </div>
             </div>
           </div>
         </section>
         <!-- card section end -->
+        <div class="button text-center mt-6 lg:mt-8">
+          <button
+            type="button"
+            class="text-white bg-blue20 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+          >
+            <span class="lg:hidden block">view All</span>
+          </button>
+        </div>
       </section>
       <!-- Students Feedback section end -->
 
       <!-- Frequently Asked question start -->
-      <section class="faq mt-28"></section>
+      <section class="faq mt-28 container mx-auto lg:py-6 px-5">
+        <!-- FAQ heading start -->
+        <div class="faq-heading pb-8 text-center space-y-5">
+          <h2 class="text-5xl text-dark01">Frequently Asked Questions</h2>
+          <p class="text-dark02">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </p>
+        </div>
+        <!-- FAQ heading end -->
+        <div id="accordion-collapse" data-accordion="collapse">
+          <h2 id="accordion-collapse-heading-1">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white"
+              data-accordion-target="#accordion-collapse-body-1"
+              aria-expanded="true"
+              aria-controls="accordion-collapse-body-1"
+            >
+              <span>what is the difference between grid and flexbox?</span>
+              <svg
+                data-accordion-icon=""
+                class="w-6 h-6 rotate-180 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+            <!-- Question-1 -->
+          </h2>
+          <div
+            id="accordion-collapse-body-1"
+            class=""
+            aria-labelledby="accordion-collapse-heading-1"
+          >
+            <div class="p-5 font-light border border-b-0 border-gray-200">
+              <p class="mb-2 text-dark02">
+                Grid is made for two-dimensional layout while Flexbox is for
+                one. This means Flexbox can work on either row or columns at a
+                time, but Grids can work on both. Flexbox, gives you more
+                flexibility while working on either element (row or column).
+                HTML markup and CSS will be easy to manage in this type of
+                scenario.
+              </p>
+              <p class="text-dark02 dark:text-gray-400">
+                Check out this guide to learn how to
+                <a
+                  href="https://www.geeksforgeeks.org/comparison-between-css-grid-css-flexbox/"
+                  target="_blank"
+                  class="text-blue20 hover:underline"
+                  >get started</a
+                >
+                and start developing websites even faster with components on top
+                of Tailwind CSS.
+              </p>
+            </div>
+          </div>
+          <!-- Question-2 -->
+          <h2 id="accordion-collapse-heading-2">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+              data-accordion-target="#accordion-collapse-body-2"
+              aria-expanded="false"
+              aria-controls="accordion-collapse-body-2"
+            >
+              <span>What is CSS box mode?</span>
+              <svg
+                data-accordion-icon=""
+                class="w-6 h-6 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-collapse-body-2"
+            class="hidden"
+            aria-labelledby="accordion-collapse-heading-2"
+          >
+            <div class="p-5 font-light border border-b-0 border-gray-200">
+              <p class="mb-2 text-dark02">
+                The CSS box model is a container that contains multiple
+                properties including borders, margin, padding, and the content
+                itself. It is used to create the design and layout of web pages.
+                It can be used as a toolkit for customizing the layout of
+                different elements. The web browser renders every element as a
+                rectangular box according to the CSS box model. Box-Model has
+                multiple properties in CSS.
+              </p>
+              <p>
+                To know more details please check
+                <a
+                  href="https://www.geeksforgeeks.org/css-box-model/"
+                  class="text-blue20"
+                  >here</a
+                >
+              </p>
+            </div>
+          </div>
+          <!-- Question-3 -->
+          <h2 id="accordion-collapse-heading-3">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+              data-accordion-target="#accordion-collapse-body-3"
+              aria-expanded="false"
+              aria-controls="accordion-collapse-body-3"
+            >
+              <span
+                >What is the difference between Bootstrap and Tailwind?</span
+              >
+              <svg
+                data-accordion-icon=""
+                class="w-6 h-6 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-collapse-body-3"
+            class="hidden"
+            aria-labelledby="accordion-collapse-heading-3"
+          >
+            <div
+              class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700"
+            >
+              <p class="mb-2 text-dark02">
+                Bootstrap comes with a set of pre-styled responsive,
+                mobile-first components that possess a definite UI kit. Tailwind
+                CSS uses a set of utility classes to create a neat UI with more
+                flexibility and uniqueness. Sites created using Bootstrap follow
+                the generic pattern that makes them look identical.
+              </p>
+
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                Learn more about these technologies:
+              </p>
+              <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                <li>
+                  <a
+                    href="https://getbootstrap.com/"
+                    class="text-blue-600 dark:text-blue-500 hover:underline"
+                    >Bootstrap</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://tailwindui.com/"
+                    rel="nofollow"
+                    class="text-blue-600 dark:text-blue-500 hover:underline"
+                    >Tailwind CSS</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Question-4 -->
+          <h2 id="accordion-collapse-heading-4">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+              data-accordion-target="#accordion-collapse-body-4"
+              aria-expanded="false"
+              aria-controls="accordion-collapse-body-4"
+            >
+              <span>What are Semantic Elements?</span>
+              <svg
+                data-accordion-icon=""
+                class="w-6 h-6 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-collapse-body-4"
+            class="hidden"
+            aria-labelledby="accordion-collapse-heading-4"
+          >
+            <div
+              class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700"
+            >
+              <p class="mb-2 text-dark02">
+                Semantic elements is elements with a meaning. A semantic element
+                clearly describes its meaning to both the browser and the
+                developer.
+              </p>
+
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                Semantic Elements in HTML:
+              </p>
+              <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                <li>
+                  <a
+                    href="https://www.freecodecamp.org/news/semantic-html5-elements/"
+                    class="text-blue-600 dark:text-blue-500 hover:underline"
+                    >nav</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.freecodecamp.org/news/semantic-html5-elements/"
+                    rel="nofollow"
+                    class="text-blue-600 dark:text-blue-500 hover:underline"
+                    >header</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.freecodecamp.org/news/semantic-html5-elements/"
+                    rel="nofollow"
+                    class="text-blue-600 dark:text-blue-500 hover:underline"
+                    >main</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.freecodecamp.org/news/semantic-html5-elements/"
+                    rel="nofollow"
+                    class="text-blue-600 dark:text-blue-500 hover:underline"
+                    >footer</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.freecodecamp.org/news/semantic-html5-elements/"
+                    rel="nofollow"
+                    class="text-blue-600 dark:text-blue-500 hover:underline"
+                    >Section</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Frequently Asked question end -->
     </main>
     <!-- Main section end -->
