@@ -24,7 +24,9 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              dark02: "#777777",
+              dark01: "#1D1D1D",
+              blue20: "#289BDE",
             },
             fontFamily: {
               poppins: ["Poppins", "sans-serif"],
@@ -36,7 +38,8 @@
   </head>
   <body>
     <!-- Navbar start -->
-    <nav class="bg-white font-poppins px-2 sm:px-4 py-2.5 w-full z-20 top-0 left-0 border-b border-gray-200 mb-20"
+    <nav
+      class="bg-white font-poppins px-2 sm:px-4 py-2.5 w-full z-20 top-0 left-0 border-b border-gray-200 mb-20"
     >
       <div
         class="container flex flex-wrap justify-between items-center mx-auto"
@@ -151,28 +154,27 @@
             class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
             data-carousel-item=""
           >
-            <!-- <span
-              class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800"
-              >First Slide</span
-            > -->
             <img
               src="./images/cover/cover-1.png"
-              class="block absolute top-1/2 md:top-full md:left-1/2 max-w-full-translate-x-1/2 -translate-y-1/2 brightness-50"
+              class="block absolute top-1/2 lg:top-full max-w-full-translate-x-1/2 -translate-y-1/2 brightness-50"
               alt="..."
             />
             <div
-              class="absolute inset-0 m-auto mt-12 md:mt-28 text-center md:w-1/2 max-w-full p-1 text-white font-bold space-y-2"
+              class="absolute inset-0 m-auto mt-12 lg:mt-28 text-center md:w-1/2 max-w-full p-1 text-white font-bold space-y-2"
             >
-              <h2 class="font-semibold text-xl md:text-5xl">Get Started Digital Learning</h2>
+              <h2 class="font-semibold text-xl md:text-5xl">
+                Get Started Digital Learning
+              </h2>
               <p class="opacity-60 text-xs">
                 It is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.
               </p>
               <button
-              type="button"
-              class="text-white  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-            >
-              Get started
+                type="button"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Get started
+              </button>
             </div>
           </div>
           <!-- Item 2 -->
@@ -182,7 +184,7 @@
           >
             <img
               src="./images/cover/cover-2.jpg"
-              class="block absolute top-1/2 left-1/2 md:top-full md:left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+              class="block absolute top-1/2 left-1/2 lg:top-full md:left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
               alt="..."
             />
           </div>
@@ -193,7 +195,7 @@
           >
             <img
               src="./images/cover/cover-3.jpg"
-              class="block  absolute top-1/2 left-1/2 md:top-full md:left-1/2 max-w-full object-contain -translate-x-1/2 -translate-y-1/2"
+              class="block absolute top-1/2 left-1/2 lg:top-72 md:left-1/2 max-w-full -translate-x-1/2 -translate-y-1/2"
               alt="..."
             />
           </div>
@@ -282,6 +284,188 @@
 
     <!-- Header end -->
 
+    <!-- Main section add -->
+    <main class="font-poppins">
+      <!-- Course section start -->
+      <section class="container mx-auto my-20">
+        <div
+          class="courses-heading text-center p-4 lg:w-1/2 md:mx-auto mb:8 lg:mb-10"
+        >
+          <h1 class="text-2xl md:text-4xl lg:text-5xl md:pb-4 text-dark01">
+            Discover Our Popular Courses
+          </h1>
+          <p class="text-dark02">
+            Start, switch, or advance your career, Professional Certificates,
+            and degrees from world-class universities and companies.
+          </p>
+        </div>
+
+        <div
+          class="course-info grid p-2 grid-cols-1 lg:grid-cols-2 gap-4 justify-evenly w-full mx-auto"
+        >
+          <div class="row space-y-5">
+            <!-- Card-1 -->
+            <div
+              class="card shadow-xl bg-white p-5 rounded-md border-2 border-slate-100 flex flex-col items-center md:items-start sm:flex-row justify-center hover:border-slate-300 cursor-default"
+            >
+              <!-- Card thumbnail -->
+              <section class="thumbnail md:pr-6">
+                <img
+                  src="./images/course/course-1.png"
+                  class="max-w-full sm:relative sm:top-6 l:top-0"
+                  alt=""
+                />
+              </section>
+              <!-- card text -->
+              <section class="text p-4">
+                <h3 class="text-xl md:text-2xl text-dark01">
+                  Fundamental Of UI/UX Design
+                </h3>
+                <p class="text-dark02">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card.
+                </p>
+                <p class="font-bold text-sm text-blue20 pt-3">Price:$20</p>
+              </section>
+            </div>
+
+            <!-- card-2 -->
+            <div
+              class="card shadow-xl bg-white p-5 rounded-md border-2 border-slate-100 flex flex-col items-center md:items-start sm:flex-row justify-center hover:border-slate-300 cursor-default"
+            >
+              <!-- Card thumbnail -->
+              <section class="thumbnail pr-6">
+                <img
+                  src="./images/course/course-2.png"
+                  class="max-w-full"
+                  alt=""
+                />
+              </section>
+              <!-- card text -->
+              <section class="text p-4">
+                <h3 class="text-xl md:text-2xl text-dark01">
+                  Python Basic to advanced
+                </h3>
+                <p class="text-dark02">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card.
+                </p>
+                <p class="font-bold text-sm text-blue20 pt-3">Price:$20</p>
+              </section>
+            </div>
+
+            <!-- card-3 -->
+            <div
+              class="card shadow-xl bg-white p-5 rounded-md border-2 border-slate-100 flex flex-col items-center md:items-start sm:flex-row justify-center hover:border-slate-300 cursor-default"
+            >
+              <!-- Card thumbnail -->
+              <section class="thumbnail pr-6">
+                <img
+                  src="./images/course/course-3.png "
+                  class="max-w-full"
+                  alt=""
+                />
+              </section>
+              <!-- card text -->
+              <section class="text p-4">
+                <h3 class="text-xl md:text-2xltext-dark01">
+                  Fullstack Web Development
+                </h3>
+                <p class="text-dark02">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card.
+                </p>
+                <p class="font-bold text-sm text-blue20 pt-3">Price:$20</p>
+              </section>
+            </div>
+          </div>
+
+          <div class="row space-y-5 hidden lg:block">
+            <!-- card-4 -->
+
+            <div
+              class="card shadow-xl bg-white p-5 rounded-md border-2 border-slate-100 invisible lg:visible flex justify-center items-center hover:border-slate-300 cursor-default"
+            >
+              <!-- Card thumbnail -->
+              <section class="thumbnail pr-6">
+                <img
+                  src="./images/course/course-4.png"
+                  class="max-w-full"
+                  alt=""
+                />
+              </section>
+              <!-- card text -->
+              <section class="text p-4">
+                <h3 class="text-2xl text-dark01">Digital Marketing</h3>
+                <p class="text-dark02">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card.
+                </p>
+                <p class="font-bold text-sm text-blue20 pt-3">Price:$20</p>
+              </section>
+            </div>
+
+            <!-- Card-5 -->
+            <div
+              class="card shadow-xl bg-white p-5 rounded-md border-2 border-slate-100 flex justify-center items-center hover:border-slate-300 cursor-default invisible lg:visible"
+            >
+              <!-- Card thumbnail -->
+              <section class="thumbnail pr-6 hidden lg:block">
+                <img
+                  src="./images/course/course-5.png"
+                  class="max-w-full"
+                  alt=""
+                />
+              </section>
+              <!-- card text -->
+              <section class="text p-4">
+                <h3 class="text-2xl text-dark01">Photography Basic Rules</h3>
+                <p class="text-dark02">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card.
+                </p>
+                <p class="font-bold text-sm text-blue20 pt-3">Price:$20</p>
+              </section>
+            </div>
+
+            <!-- Card-6 -->
+            <div
+              class="card shadow-xl bg-white p-5 rounded-md border-2 border-slate-100 flex justify-center items-center hover:border-slate-300 cursor-default invisible lg:visible"
+            >
+              <!-- Card thumbnail -->
+              <section class="thumbnail pr-6">
+                <img
+                  src="./images/course/course-6.png"
+                  class="max-w-full"
+                  alt=""
+                />
+              </section>
+              <!-- card text -->
+              <section class="text p-4">
+                <h3 class="text-2xl text-dark01">Motion Graphics</h3>
+                <p class="text-dark02">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card.
+                </p>
+                <p class="font-bold text-sm text-blue20 pt-3">Price:$20</p>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div class="button text-center mt-6 lg:mt-8">
+          <button
+            type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+          >
+            <span class="lg:hidden block">view All</span>
+            <span class="hidden lg:block">See More Courses</span>
+          </button>
+        </div>
+      </section>
+      <!-- Course section end -->
+    </main>
+    <!-- Main section end -->
 
     <!-- tailwind component library -->
     <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
